@@ -218,6 +218,8 @@ GameObject:
   - component: {fileID: 736612717}
   - component: {fileID: 736612716}
   - component: {fileID: 736612715}
+  - component: {fileID: 736612720}
+  - component: {fileID: 736612719}
   m_Layer: 8
   m_Name: Enemy2
   m_TagString: Untagged
@@ -327,6 +329,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736612719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736612714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e57e695599a12bd40ba46dd0a61d95d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeSpawn: 1
+  shoot: {fileID: 8352846722504127110, guid: 01a8d6c508e6bd441866f32388429d95, type: 3}
+  nameSpawn: SpawnShoot
+--- !u!114 &736612720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736612714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c860a665933788d42bbef628d743f201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &777125957
 GameObject:
   m_ObjectHideFlags: 0
