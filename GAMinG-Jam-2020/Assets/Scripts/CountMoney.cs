@@ -18,8 +18,4 @@ public class CountMoney : MonoBehaviour
     {
         moedas -= cost;
     }
-    private void Update()
-    {
-        Debug.Log(moedas);
-    }
 }
