@@ -7,6 +7,7 @@ public class Life : MonoBehaviour
     [SerializeField] private int vidaMax = 1;
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private bool monster = false;
+    [SerializeField] private GameObject money;
     private SpriteRenderer spriteRend;
     private int vidaAtual;
     private int minimaVida;
@@ -30,7 +31,10 @@ public class Life : MonoBehaviour
         if (monster)
         {
             if (vidaAtual <= 0)
+            {
+                Instantiate(money, transform.position,new Quaternion(0,0,0,0));
                 Destroy(this.gameObject);
+            }
 
         }
         else
@@ -62,5 +66,9 @@ public class Life : MonoBehaviour
     public int GetLife()
     {
         return vidaAtual;
+    }
+    public int GetMaxLife()
+    {
+        return vidaMax;
     }
 }
