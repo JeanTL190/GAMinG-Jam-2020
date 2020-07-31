@@ -10,10 +10,12 @@ public class Damage : MonoBehaviour
     [SerializeField] private string gatilho;
     private InimigoAndar iA;
     private Life vidaInimigo;
+    private AudioSource audio;
 
     private void Awake()
     {
         iA = GetComponent<InimigoAndar>();
+        audio = GetComponent<AudioSource>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,6 +31,7 @@ public class Damage : MonoBehaviour
                 }
                 else
                 {
+                    audio.Play();
                     anim.SetBool(gatilho, true);
                     iA.Walk(0);
                 }
@@ -40,6 +43,7 @@ public class Damage : MonoBehaviour
         vidaInimigo.TakeDamage(damage);
         if(vidaInimigo.GetLife()<=0)
         {
+            audio.Stop();
             anim.SetBool(gatilho, false);
             iA.Walk(iA.GetSpeed());
         }

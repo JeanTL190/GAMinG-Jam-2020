@@ -7,9 +7,11 @@ public class Money : MonoBehaviour
     [SerializeField] private int money = 1;
     [SerializeField] private float timeToDesapear = 1f;
     [SerializeField] private bool willDesapear = true;
+    private AudioSource audio;
 
     private void Awake()
     {
+        audio = GetComponent<AudioSource>();
         if (willDesapear)
             StartCoroutine("Desapear");
     }
@@ -21,6 +23,7 @@ public class Money : MonoBehaviour
             count = collision.GetComponent<CountMoney>();
             if(count!=null)
             {
+                audio.Play();
                 count.MoreMoney(money);
                 Destroy(this.gameObject);
             }
