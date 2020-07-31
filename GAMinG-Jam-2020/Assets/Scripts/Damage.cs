@@ -8,8 +8,13 @@ public class Damage : MonoBehaviour
     [SerializeField] private int damage = 1;
     [SerializeField] private Animator anim;
     [SerializeField] private string gatilho;
+    private InimigoAndar iA;
     private Life vidaInimigo;
 
+    private void Awake()
+    {
+        iA = GetComponent<InimigoAndar>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision != null)
@@ -25,6 +30,7 @@ public class Damage : MonoBehaviour
                 else
                 {
                     anim.SetBool(gatilho, true);
+                    iA.Walk(0);
                 }
             }
         }
@@ -33,6 +39,9 @@ public class Damage : MonoBehaviour
     {
         vidaInimigo.TakeDamage(damage);
         if(vidaInimigo.GetLife()<=0)
+        {
             anim.SetBool(gatilho, false);
+            iA.Walk(iA.GetSpeed());
+        }
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnShoot : MonoBehaviour
 {
-    [SerializeField] private float timeSpawn=1f;
     [SerializeField] private GameObject shoot;
     [SerializeField] private string nameSpawn;
     private Transform tSpawn;
@@ -12,12 +11,11 @@ public class SpawnShoot : MonoBehaviour
     private InimigoAndar iA;
     private bool aux;
 
-    private void Start()
+    private void Awake()
     {
         iA = GetComponent<InimigoAndar>();
         canShoot = GetComponentInChildren<CanShoot>();
         tSpawn = transform.Find(nameSpawn);
-        StartCoroutine("Spawn");
     }
     private void Update()
     {
@@ -31,17 +29,9 @@ public class SpawnShoot : MonoBehaviour
             iA.Walk(0);
         }
     }
-    IEnumerator Spawn()
+    public void Spawn()
     {
-        while (true)
-        {
-            if (aux)
-            {
-                Instantiate(shoot, tSpawn.position, transform.rotation);
-                yield return new WaitForSeconds(timeSpawn);
-            }
-            else
-                yield return new WaitForSeconds(0);
-        }
+        Instantiate(shoot, tSpawn.position, transform.rotation);
     }
+
 }
