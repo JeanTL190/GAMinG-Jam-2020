@@ -23,7 +23,7 @@ public class Money : MonoBehaviour
             count = collision.GetComponent<CountMoney>();
             if(count!=null)
             {
-                audio.Play();
+                //audio.Play();
                 count.MoreMoney(money);
                 Destroy(this.gameObject);
             }

@@ -13,27 +13,35 @@ public class BuildAtower : MonoBehaviour
     private CountMoney money;
     private int price;
     private bool inCollider = false;
+    private void Awake()
+    {
+        for(int i=0;i<buttons.Length;i++)
+        {
+            buttons[i].GetComponentInChildren<Text>().text = prices[i].ToString();
+        }
+    }
     private void Update()
     {
         if(buttons!=null && money!=null)
         {
             int aux = money.GetMoedas();
-            ColorBlock corCanBuy = new ColorBlock();
-            ColorBlock corCantBuy = new ColorBlock();
-            corCanBuy.highlightedColor = Color.green;
-            corCanBuy.pressedColor = Color.yellow;
-            corCantBuy.highlightedColor = Color.red;
-            corCantBuy.pressedColor = Color.yellow;
-            for (int i=0;i<buttons.Length-1;i++)
+            ColorBlock cor;
+            for (int i=0;i<buttons.Length;i++)
             {
                 
-                if(aux>prices[i])
+                if(aux>=prices[i])
                 {
-                    buttons[i].colors = corCanBuy;
+                    cor = buttons[i].colors;
+                    cor.highlightedColor = Color.green;
+                    cor.pressedColor = Color.yellow;
+                    buttons[i].colors = cor;
                 }
                 else
                 {
-                    buttons[i].colors = corCantBuy;
+                    cor = buttons[i].colors;
+                    cor.highlightedColor = Color.red;
+                    cor.pressedColor = Color.yellow;
+                    buttons[i].colors = cor;
                 }
             }
         }
@@ -59,7 +67,7 @@ public class BuildAtower : MonoBehaviour
     {
         inCollider = false;
         canvas.SetActive(false);
-        canvasAux.SetActive(true);
+        canvasAux.SetActive(false);
     }
     public void BuildATower(GameObject tower)
     {
@@ -67,7 +75,9 @@ public class BuildAtower : MonoBehaviour
         {
             if(money.GetMoedas()>=price)
             {
-                Transform t = GetComponentInParent<Transform>();
+                Transform t = GetComponent<Transform>();
+                Vector2 vet = new Vector2(t.position.x, tower.transform.position.y);
+                t.position = vet;
                 Instantiate(tower, t.position,t.rotation);
                 money.BuyABuild(price);
                 Destroy(this.gameObject);

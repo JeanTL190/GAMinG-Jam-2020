@@ -20,7 +20,11 @@ public class SpawnEnemy : MonoBehaviour
     {
         for(int i=0;i<maxEnemy;i++)
         {
-            Instantiate(enemies[Random.Range(0, nv)], this.transform);
+            int aux = Random.Range(0, nv);
+            Transform t = GetComponent<Transform>();
+            Vector2 vet = new Vector2(t.position.x, enemies[aux].transform.position.y);
+            t.position = vet;
+            Instantiate(enemies[aux], t);
             yield return new WaitForSeconds(timeSpawn);
         }
     }
