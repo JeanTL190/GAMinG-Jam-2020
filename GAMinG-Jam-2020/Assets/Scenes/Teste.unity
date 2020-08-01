@@ -542,7 +542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidaMax: 500
-  sprites: []
+  sprites:
+  - {fileID: 0}
   monster: 0
   money: {fileID: 0}
 --- !u!61 &983142988
@@ -555,7 +556,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -735,7 +736,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -933,7 +934,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.6531396, y: -0.99085}
+  m_Offset: {x: -0.60704607, y: -0.99085}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -944,7 +945,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.4175825, y: 2.998105}
+  m_Size: {x: 1.3253957, y: 2.998105}
   m_EdgeRadius: 0
 --- !u!1 &1873662328
 GameObject:
@@ -1040,7 +1041,7 @@ GameObject:
   - component: {fileID: 2118850063}
   - component: {fileID: 2118850065}
   - component: {fileID: 2118850064}
-  m_Layer: 10
+  m_Layer: 14
   m_Name: Ranged
   m_TagString: Untagged
   m_Icon: {fileID: 0}

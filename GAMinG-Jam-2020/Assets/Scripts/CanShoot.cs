@@ -5,19 +5,35 @@ using UnityEngine;
 public class CanShoot : MonoBehaviour
 {
     private bool canShoot=false;
-   
+    private Life vidaInimigo;
+
+    private void Update()
+    {
+        if (vidaInimigo != null)
+        {
+            int aux = vidaInimigo.GetLife();
+            if(aux<=0)
+            {
+                canShoot = false;
+            }
+        }
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision != null)
         {
-            Life vidaInimigo = collision.GetComponent<Life>();
+            vidaInimigo = collision.GetComponent<Life>();
             if (vidaInimigo != null)
             {
                 int aux = vidaInimigo.GetLife();
                 if (aux > 0)
+                {
                     canShoot = true;
+                }
                 else
+                {
                     canShoot = false;
+                }
             }
         }
     }
