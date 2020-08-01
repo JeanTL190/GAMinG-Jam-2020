@@ -14,6 +14,114 @@ TextureImporter:
   - first:
       213: -8032761783023016595
     second: tower-half damage_3
+  - first:
+      213: 2391906344596229256
+    second: tower-half damage_0
+  - first:
+      213: -1073433379487946666
+    second: tower-half damage_1
+  - first:
+      213: 5663425817197582642
+    second: tower-half damage_2
+  - first:
+      213: -945642422848385119
+    second: tower-half damage_3
+  - first:
+      213: 6909564661831989379
+    second: tower-half damage_4
+  - first:
+      213: 4037318979362072359
+    second: tower-half damage_5
+  - first:
+      213: 2478776691678786801
+    second: tower-half damage_6
+  - first:
+      213: 8678664061095888919
+    second: tower-half damage_7
+  - first:
+      213: 7186427306767666266
+    second: tower-half damage_8
+  - first:
+      213: -6683570830169885638
+    second: tower-half damage_9
+  - first:
+      213: 7872052164814097551
+    second: tower-half damage_10
+  - first:
+      213: 6866287183929273264
+    second: tower-half damage_11
+  - first:
+      213: 5794785930619787942
+    second: tower-half damage_12
+  - first:
+      213: -4600953285997767596
+    second: tower-half damage_13
+  - first:
+      213: 4894889989058923962
+    second: tower-half damage_14
+  - first:
+      213: -510288459354758536
+    second: tower-half damage_15
+  - first:
+      213: 4487772631559808064
+    second: tower-half damage_16
+  - first:
+      213: -6648645017686673861
+    second: tower-half damage_17
+  - first:
+      213: 2026544872796883187
+    second: tower-half damage_18
+  - first:
+      213: -854241659529322176
+    second: tower-half damage_19
+  - first:
+      213: 4008252977357667467
+    second: tower-half damage_20
+  - first:
+      213: -7815055539839994965
+    second: tower-half damage_21
+  - first:
+      213: -6940191766092740524
+    second: tower-half damage_22
+  - first:
+      213: -3345509957440656390
+    second: tower-half damage_23
+  - first:
+      213: -6147013904676494205
+    second: tower-half damage_24
+  - first:
+      213: 3521127601187819360
+    second: tower-half damage_25
+  - first:
+      213: 3607834433400868797
+    second: tower-half damage_26
+  - first:
+      213: -558374573151345641
+    second: tower-half damage_27
+  - first:
+      213: -5672464642851794742
+    second: tower-half damage_28
+  - first:
+      213: -7776376359251570064
+    second: tower-half damage_29
+  - first:
+      213: 1824372151282480122
+    second: tower-half damage_30
+  - first:
+      213: 6872567923010903474
+    second: tower-half damage_31
+  - first:
+      213: -6959436100165321739
+    second: tower-half damage_32
+  - first:
+      213: -655194130863292317
+    second: tower-half damage_33
+  - first:
+      213: -2315817412926917311
+    second: tower-half damage_34
+  - first:
+      213: 9183692440008664915
+    second: tower-half damage_35
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,8 +223,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4ce57052d570360800000000000000
-      internalID: 7135774548210664627
+      spriteID: 88c49a5c522c13120800000000000000
+      internalID: 2391906344596229256
       vertices: []
       indices: 
       edges: []
@@ -136,8 +244,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece16af2abbada140800000000000000
-      internalID: 4732627599587942094
+      spriteID: 658e29557066a11f0800000000000000
+      internalID: -1073433379487946666
       vertices: []
       indices: 
       edges: []
@@ -157,8 +265,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4ed51afce44cff30800000000000000
-      internalID: 4610635903119253068
+      spriteID: 23996dd46c7889e40800000000000000
+      internalID: 5663425817197582642
       vertices: []
       indices: 
       edges: []
@@ -178,8 +286,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d65649db7b5e58090800000000000000
-      internalID: -8032761783023016595
+      spriteID: 1af05950a3760e2f0800000000000000
+      internalID: -945642422848385119
       vertices: []
       indices: 
       edges: []
