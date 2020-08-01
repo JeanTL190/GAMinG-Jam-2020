@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: dcffe7f7d3cde8b4eb6c89098271444f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3747731943655835240
+    second: inimiguinho3_0
+  - first:
+      213: 4709065985697427904
+    second: inimiguinho3_1
+  - first:
+      213: -1692479116363290409
+    second: inimiguinho3_2
+  - first:
+      213: -4860988672664642326
+    second: inimiguinho3_3
+  - first:
+      213: -8236447085272910119
+    second: inimiguinho3_4
+  - first:
+      213: -6657322207944541304
+    second: inimiguinho3_5
+  - first:
+      213: -4590370020167193824
+    second: inimiguinho3_6
+  - first:
+      213: 1185123900085705386
+    second: inimiguinho3_7
+  - first:
+      213: 5623402227913045016
+    second: inimiguinho3_8
+  - first:
+      213: 2076344003441150401
+    second: inimiguinho3_9
+  - first:
+      213: 4256492266987885187
+    second: inimiguinho3_10
+  - first:
+      213: 7326115224727172151
+    second: inimiguinho3_11
+  - first:
+      213: 7262889098982492688
+    second: inimiguinho3_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +71,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -41,12 +80,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 48
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -73,9 +112,294 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: inimiguinho3_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 141
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899720157a16dfbc0800000000000000
+      internalID: -3747731943655835240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 141
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1be557096f95140800000000000000
+      internalID: 4709065985697427904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 141
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d82667f53b1388e0800000000000000
+      internalID: -1692479116363290409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 141
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec50ac8e8c4a8cb0800000000000000
+      internalID: -4860988672664642326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_4
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 141
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6b107b30342bd80800000000000000
+      internalID: -8236447085272910119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_5
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 72
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b752059b07c93a0800000000000000
+      internalID: -6657322207944541304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 72
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02be45899cabb40c0800000000000000
+      internalID: -4590370020167193824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_7
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 72
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa1f6778e7627010800000000000000
+      internalID: 1185123900085705386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_8
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 72
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814b5ef38865a0e40800000000000000
+      internalID: 5623402227913045016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_9
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 72
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c94f94ced7a0dc10800000000000000
+      internalID: 2076344003441150401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 3
+        width: 48
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382920b3a29121b30800000000000000
+      internalID: 4256492266987885187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 3
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734b1714bf69ba560800000000000000
+      internalID: 7326115224727172151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inimiguinho3_12
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 3
+        width: 45
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a88e3b727fac460800000000000000
+      internalID: 7262889098982492688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
