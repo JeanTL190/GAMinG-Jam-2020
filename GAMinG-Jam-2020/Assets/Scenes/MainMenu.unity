@@ -384,7 +384,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &372033537
 GameObject:
@@ -760,7 +760,7 @@ RectTransform:
   - {fileID: 568655784}
   - {fileID: 165181301}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -779,7 +779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e0d4158968bf1f40a275e6929f3bc8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
+  audioMixer: {fileID: 24100000, guid: fc27d2459e6d2ae46aa5a0caeaa0de77, type: 2}
 --- !u!1 &568655783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1037,7 @@ GameObject:
   - component: {fileID: 810944940}
   - component: {fileID: 810944939}
   - component: {fileID: 810944938}
+  - component: {fileID: 810944941}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1119,6 +1120,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Sele\xE7\xE3o de Menu"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &810944939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1157,6 +1170,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810944936}
   m_CullTransparentMesh: 0
+--- !u!114 &810944941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810944936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &811334017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,6 +1284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836586160}
   - component: {fileID: 836586161}
+  - component: {fileID: 836586162}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -1328,7 +1371,48 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Sele\xE7\xE3o de Menu"
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &836586162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836586159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &951944568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 963582973}
   - component: {fileID: 963582974}
+  - component: {fileID: 963582975}
   m_Layer: 5
   m_Name: VolumeSlider
   m_TagString: Untagged
@@ -1565,8 +1650,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 1543867006}
   m_HandleRect: {fileID: 961793294}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1584,6 +1669,35 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &963582975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963582972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1037369561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1710,7 @@ GameObject:
   - component: {fileID: 1037369565}
   - component: {fileID: 1037369564}
   - component: {fileID: 1037369563}
+  - component: {fileID: 1037369566}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -1678,6 +1793,18 @@ MonoBehaviour:
           m_StringArgument: oi
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Sele\xE7\xE3o de Menu"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1037369564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1716,6 +1843,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037369561}
   m_CullTransparentMesh: 0
+--- !u!114 &1037369566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037369561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1111974563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,6 +1884,7 @@ GameObject:
   - component: {fileID: 1111974567}
   - component: {fileID: 1111974566}
   - component: {fileID: 1111974565}
+  - component: {fileID: 1111974568}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1810,6 +1967,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Sele\xE7\xE3o de Menu"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1111974566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1848,6 +2017,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111974563}
   m_CullTransparentMesh: 0
+--- !u!114 &1111974568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111974563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1182773938
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2205,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -11.282}
   m_SizeDelta: {x: -219.89832, y: -227.63977}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1275410183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1275410185}
+  - component: {fileID: 1275410184}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1275410184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275410183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0905ab8e2a7c88a40858932819339377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Musica Tema
+    clip: {fileID: 8300000, guid: f4ea54096ffe10a479ce541a69982526, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Musiquinha 2
+    clip: {fileID: 8300000, guid: bc66afb5ff35dec43abf8362e7d156d8, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: "Sele\xE7\xE3o de Menu"
+    clip: {fileID: 8300000, guid: 0c59d725c90936d4092830686753bffc, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: "Movimenta\xE7\xE3o de menu"
+    clip: {fileID: 8300000, guid: f760f12726b666b4fa914d3c9987ba97, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
+  flag: 0
+--- !u!4 &1275410185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1275410183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 308.07748, y: 237.68213, z: -67.713234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1443079636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,6 +2368,7 @@ GameObject:
   - component: {fileID: 1456283853}
   - component: {fileID: 1456283852}
   - component: {fileID: 1456283851}
+  - component: {fileID: 1456283854}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -2177,6 +2451,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Sele\xE7\xE3o de Menu"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1456283852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,6 +2501,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456283849}
   m_CullTransparentMesh: 0
+--- !u!114 &1456283854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456283849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1466507147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,6 +2771,7 @@ GameObject:
   - component: {fileID: 1559454874}
   - component: {fileID: 1559454873}
   - component: {fileID: 1559454872}
+  - component: {fileID: 1559454875}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -2538,6 +2854,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Sele\xE7\xE3o de Menu"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1559454873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2576,6 +2904,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559454870}
   m_CullTransparentMesh: 0
+--- !u!114 &1559454875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559454870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1584039288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2588,6 +2945,7 @@ GameObject:
   - component: {fileID: 1584039292}
   - component: {fileID: 1584039291}
   - component: {fileID: 1584039290}
+  - component: {fileID: 1584039293}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -2670,6 +3028,42 @@ MonoBehaviour:
           m_StringArgument: SampleScene
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Sele\xE7\xE3o de Menu"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Musiquinha 2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1275410184}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Stop
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Musica Tema
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1584039291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2708,6 +3102,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584039288}
   m_CullTransparentMesh: 0
+--- !u!114 &1584039293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584039288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1275410184}
+          m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+          m_MethodName: Play
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: "Movimenta\xE7\xE3o de menu"
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1631941492
 GameObject:
   m_ObjectHideFlags: 0
