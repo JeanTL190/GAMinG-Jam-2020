@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2610457875129533631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2610457875129533617}
+  - component: {fileID: 2610457875129533616}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2610457875129533617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610457875129533631}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 308.07748, y: 237.68213, z: -67.713234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2610457875129533616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2610457875129533631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0905ab8e2a7c88a40858932819339377, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Musica Tema
+    clip: {fileID: 8300000, guid: f4ea54096ffe10a479ce541a69982526, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Musiquinha 2
+    clip: {fileID: 8300000, guid: bc66afb5ff35dec43abf8362e7d156d8, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: "Sele\xE7\xE3o de Menu"
+    clip: {fileID: 8300000, guid: 0c59d725c90936d4092830686753bffc, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: "Movimenta\xE7\xE3o de menu"
+    clip: {fileID: 8300000, guid: f760f12726b666b4fa914d3c9987ba97, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flechada 1
+    clip: {fileID: 8300000, guid: 77fc603ba39ad5640940a45bdfec93ab, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Correndo
+    clip: {fileID: 8300000, guid: 66f16173424fc314095528e8cb5701b8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 1
+    clip: {fileID: 8300000, guid: bf6aee458ce0f5e42be96aa4675181a8, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 2
+    clip: {fileID: 8300000, guid: da71ab2027cb13e44890a072550fd079, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 3
+    clip: {fileID: 8300000, guid: c70a15c8505bd014098ed36c49a88664, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 5
+    clip: {fileID: 8300000, guid: 1536e5f9c0e21e14e8e601d30a185f45, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 6
+    clip: {fileID: 8300000, guid: 56a4763333676fb4c908190248436e34, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 7
+    clip: {fileID: 8300000, guid: e8349045e4086fc449d49910752a16cd, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Goblings 4
+    clip: {fileID: 8300000, guid: 5381af5db32a8e04e99149c3c5de6506, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  flag: 0
