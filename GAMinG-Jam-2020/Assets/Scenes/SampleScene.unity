@@ -897,6 +897,7 @@ MonoBehaviour:
   - {fileID: 138226099}
   prices: 01000000
   canvas: {fileID: 1880367906}
+  canvasAux: {fileID: 0}
   ativo: 0
 --- !u!212 &1099447265
 SpriteRenderer:

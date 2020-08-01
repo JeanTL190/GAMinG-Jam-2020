@@ -33,6 +33,11 @@ public class AudioManager : MonoBehaviour
     {
         Audio s = Array.Find(sounds, sound => sound.name == name);
         s.source.Play();
+
+        if(MenuFunctions.paused)
+        {
+            s.source.pitch *= .5f;
+        }
     }
 
     public void Stop(string name)

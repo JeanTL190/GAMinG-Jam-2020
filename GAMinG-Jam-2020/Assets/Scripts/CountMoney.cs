@@ -8,6 +8,7 @@ public class CountMoney : MonoBehaviour
     public void MoreMoney(int money)
     {
         moedas += money;
+        //FindObjectOfType<AudioManager>().Play("Som de moedas");
     }
     public int GetMoedas()
     {
