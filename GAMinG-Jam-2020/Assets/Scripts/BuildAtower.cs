@@ -8,6 +8,7 @@ public class BuildAtower : MonoBehaviour
     [SerializeField] private Button[] buttons;
     [SerializeField] private int[] prices;
     [SerializeField] private GameObject canvas;
+    [SerializeField] private GameObject canvasAux;
     [SerializeField] private bool ativo = false;
     private CountMoney money;
     private int price;
@@ -51,12 +52,14 @@ public class BuildAtower : MonoBehaviour
         {
             money = collision.GetComponent<CountMoney>();
             inCollider = true;
+            canvasAux.SetActive(true);
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         inCollider = false;
         canvas.SetActive(false);
+        canvasAux.SetActive(true);
     }
     public void BuildATower(GameObject tower)
     {

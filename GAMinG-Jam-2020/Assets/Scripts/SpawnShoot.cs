@@ -9,14 +9,12 @@ public class SpawnShoot : MonoBehaviour
     private Transform tSpawn;
     private CanShoot canShoot;
     private InimigoAndar iA;
-    private AudioSource audio;
     private bool aux;
 
     private void Awake()
     {
         iA = GetComponent<InimigoAndar>();
         canShoot = GetComponentInChildren<CanShoot>();
-        audio = GetComponent<AudioSource>();
         tSpawn = transform.Find(nameSpawn);
     }
     private void Update()
@@ -34,8 +32,7 @@ public class SpawnShoot : MonoBehaviour
     }
     public void Spawn()
     {
-        if(audio!=null)
-            audio.Play();
+        FindObjectOfType<AudioManager>().Play("Flechada 1");
         Instantiate(shoot, tSpawn.position, transform.rotation);
     }
 

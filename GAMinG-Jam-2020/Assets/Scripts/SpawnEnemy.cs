@@ -21,6 +21,7 @@ public class SpawnEnemy : MonoBehaviour
         for(int i=0;i<maxEnemy;i++)
         {
             Instantiate(enemies[Random.Range(0, nv)], this.transform);
+            FindObjectOfType<AudioManager>().Play("Goblings " + Random.Range(1, 7));
             yield return new WaitForSeconds(timeSpawn);
         }
     }
