@@ -2259,10 +2259,40 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Flechada 1
+    clip: {fileID: 8300000, guid: 77fc603ba39ad5640940a45bdfec93ab, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Correndo
+    clip: {fileID: 8300000, guid: 66f16173424fc314095528e8cb5701b8, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flechada 1
+    clip: {fileID: 8300000, guid: 77fc603ba39ad5640940a45bdfec93ab, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flechada 1
+    clip: {fileID: 8300000, guid: 77fc603ba39ad5640940a45bdfec93ab, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flechada 1
+    clip: {fileID: 8300000, guid: 77fc603ba39ad5640940a45bdfec93ab, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flechada 1
+    clip: {fileID: 8300000, guid: 77fc603ba39ad5640940a45bdfec93ab, type: 3}
+    volume: 0.5
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   flag: 0
