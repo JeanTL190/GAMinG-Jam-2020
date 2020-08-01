@@ -28,4 +28,22 @@ public class CanShootTower : MonoBehaviour
             }
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(fila!=null)
+        {
+            if (collision == fila.Peek())
+            {
+                fila.Dequeue();
+            }
+        }
+    }
+    public Queue<Collider2D> GetQueue()
+    {
+        return fila;
+    }
+    public bool CanShoot()
+    {
+        return (fila.Count > 0);
+    }
 }
