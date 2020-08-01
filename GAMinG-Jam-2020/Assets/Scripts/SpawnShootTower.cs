@@ -23,7 +23,7 @@ public class SpawnShootTower : MonoBehaviour
     }
     public void Spawn()
     {
-        FindObjectOfType<AudioManager>().Play("Flechada 1");
+       // FindObjectOfType<AudioManager>().Play("Flechada 1");
         if (vida.GetLife()>0)
             Instantiate(shoot, tSpawn.position, transform.rotation);
     }

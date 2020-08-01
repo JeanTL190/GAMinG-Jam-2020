@@ -32,7 +32,7 @@ public class SpawnShoot : MonoBehaviour
     }
     public void Spawn()
     {
-        FindObjectOfType<AudioManager>().Play("Flechada 1");
+        //FindObjectOfType<AudioManager>().Play("Flechada 1");
         Instantiate(shoot, tSpawn.position, transform.rotation);
     }
 

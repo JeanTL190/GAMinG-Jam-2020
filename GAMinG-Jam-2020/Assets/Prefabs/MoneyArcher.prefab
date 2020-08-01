@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 1398709809977246033}
   - component: {fileID: 4995959163901440696}
   - component: {fileID: 9132767539203232854}
-  m_Layer: 0
+  - component: {fileID: -7394141425773759743}
+  m_Layer: 15
   m_Name: MoneyArcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,3 +119,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &-7394141425773759743
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3715951455741400512}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.007938385, y: 0.0066070557}
+  serializedVersion: 2
+  m_Radius: 0.26455307
