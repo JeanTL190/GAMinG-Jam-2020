@@ -5,6 +5,7 @@ using UnityEngine;
 public class CanShootTower : MonoBehaviour
 {
     private Queue<Collider2D> fila;
+    public Animator m_Animator;
 
     private void Awake()
     {
@@ -33,6 +34,8 @@ public class CanShootTower : MonoBehaviour
             if (vidaInimigo != null)
             {
                 fila.Enqueue(collision);
+                m_Animator.SetBool("isShooting", true);
+                FindObjectOfType<AudioManager>().Play("Flechada 1");
             }
         }
     }
@@ -43,6 +46,7 @@ public class CanShootTower : MonoBehaviour
             if (collision == fila.Peek())
             {
                 fila.Dequeue();
+                m_Animator.SetBool("isShooting", false);
             }
         }
     }

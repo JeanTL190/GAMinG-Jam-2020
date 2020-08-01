@@ -9,6 +9,7 @@ public class SpawnShoot : MonoBehaviour
     private Transform tSpawn;
     private CanShoot canShoot;
     private InimigoAndar iA;
+    Animator m_Animator;
     private bool aux;
 
     private void Awake()
@@ -16,6 +17,7 @@ public class SpawnShoot : MonoBehaviour
         iA = GetComponent<InimigoAndar>();
         canShoot = GetComponentInChildren<CanShoot>();
         tSpawn = transform.Find(nameSpawn);
+        m_Animator = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -23,10 +25,13 @@ public class SpawnShoot : MonoBehaviour
         if (!aux)
         {
             iA.Walk(iA.GetSpeed());
+            m_Animator.SetBool("isShooting", false);
         }
         if (aux)
         {
             iA.Walk(0);
+            m_Animator.SetBool("isShooting", true);
+            FindObjectOfType<AudioManager>().Play("Flechada 1");
         }
     }
     public void Spawn()

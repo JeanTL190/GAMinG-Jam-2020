@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ranged: 1
+  tower: 0
   damage: 1
   anim: {fileID: 0}
   gatilho: 
@@ -111,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  maxDist: 20
+  maxDist: 22.16
 --- !u!212 &456695095589888132
 SpriteRenderer:
   m_ObjectHideFlags: 0

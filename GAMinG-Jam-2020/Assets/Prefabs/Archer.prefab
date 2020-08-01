@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 5765765059606977249}
   - component: {fileID: 5765765059606977248}
   - component: {fileID: 5765765059606977251}
+  - component: {fileID: 8811403024930987299}
   m_Layer: 8
   m_Name: Archer
   m_TagString: Untagged
@@ -248,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5ecb00e9fadcb8429351ebe477986f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaMax: 25
+  vidaMax: 1
   sprites: []
   monster: 1
   money: {fileID: 3715951455741400512, guid: 5ae714265078fd243a1ae38a10ca6be8, type: 3}
@@ -280,3 +281,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shoot: {fileID: 5068216414560261074, guid: b802b2a87e0ea364f9036d37685c8db5, type: 3}
   nameSpawn: ProjectileEnemy
+--- !u!95 &8811403024930987299
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5765765059606977244}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e79dc8c5832f8f9459d982dd1f7212bb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

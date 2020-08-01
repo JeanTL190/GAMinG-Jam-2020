@@ -29,6 +29,7 @@ public class CanShoot : MonoBehaviour
                 if (aux > 0)
                 {
                     canShoot = true;
+                    
                 }
                 else
                 {
