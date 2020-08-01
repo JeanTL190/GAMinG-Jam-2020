@@ -16,14 +16,9 @@ public class SpawnShootTower : MonoBehaviour
         canShootTower = GetComponentInChildren<CanShootTower>();
         tSpawn = transform.Find(nameSpawn);
     }
-    private void Update()
-    {
-        if (canShootTower.CanShoot())
-            Spawn();
-    }
     public void Spawn()
     {
-        FindObjectOfType<AudioManager>().Play("Flechada 1");
+       // FindObjectOfType<AudioManager>().Play("Flechada 1");
         if (vida.GetLife()>0)
             Instantiate(shoot, tSpawn.position, transform.rotation);
     }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Damage : MonoBehaviour
 {
     [SerializeField] private bool ranged = true;
+    [SerializeField] private bool tower = false;
     [SerializeField] private int damage = 1;
     [SerializeField] private Animator anim;
     [SerializeField] private string gatilho;
@@ -22,7 +23,7 @@ public class Damage : MonoBehaviour
         if (collision != null)
         {
             vidaInimigo = collision.GetComponent<Life>();
-            if (vidaInimigo != null)
+            if (vidaInimigo != null && !tower)
             {
                 if (ranged)
                 {
@@ -34,6 +35,14 @@ public class Damage : MonoBehaviour
                     audio.Play();
                     anim.SetBool(gatilho, true);
                     iA.Walk(0);
+                }
+            }
+            else if(vidaInimigo!=null && tower)
+            {
+                DisparoTower disparo = GetComponent<DisparoTower>();
+                if (disparo.GetCol() == collision)
+                {
+                    vidaInimigo.TakeDamage(damage);
                 }
             }
         }
