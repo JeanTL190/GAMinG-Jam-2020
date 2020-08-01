@@ -14,10 +14,10 @@ TagManager:
   - 
   - 
   - Enemy
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Range
+  - Disparo
+  - Tower
   - 
   - 
   - 

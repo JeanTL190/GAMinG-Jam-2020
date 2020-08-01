@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 983142988}
   - component: {fileID: 983142987}
   - component: {fileID: 983142986}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: TowerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983142983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.56, y: 0.28, z: 0}
+  m_LocalPosition: {x: 4.5, y: 0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1759192085}
@@ -569,7 +569,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.48}
+  m_Size: {x: 3, y: 2.4375}
   m_EdgeRadius: 0
 --- !u!50 &983142989
 Rigidbody2D:
@@ -607,7 +607,7 @@ GameObject:
   - component: {fileID: 1004755427}
   - component: {fileID: 1004755426}
   - component: {fileID: 1004755425}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Archer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.48, y: 0.48}
+  m_Size: {x: 1, y: 1.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoot: {fileID: 5068216414560261074, guid: b802b2a87e0ea364f9036d37685c8db5, type: 3}
-  nameSpawn: Projectile
+  nameSpawn: ProjectileEnemy
 --- !u!114 &1004755426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,13 +743,13 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1.125}
-    newSize: {x: 0.48, y: 0.48}
+    newSize: {x: 1, y: 1.125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.48}
+  m_Size: {x: 1, y: 1.125}
   m_EdgeRadius: 0
 --- !u!50 &1004755429
 Rigidbody2D:
@@ -782,7 +782,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131782963}
   m_Layer: 0
-  m_Name: Projectile
+  m_Name: ProjectileEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131782962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.242, y: 0.239, z: 0}
+  m_LocalPosition: {x: 0.52, y: 0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1004755424}
@@ -855,7 +855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1483029713}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -870,7 +870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483029712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.237, y: 0.24, z: 0}
+  m_LocalPosition: {x: -1.3, y: 1.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 983142985}
@@ -887,7 +887,7 @@ GameObject:
   - component: {fileID: 1759192085}
   - component: {fileID: 1759192087}
   - component: {fileID: 1759192086}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ranged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,7 +902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759192084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.28, y: 1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 983142985}
@@ -933,7 +933,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.734188, y: 0.06498718}
+  m_Offset: {x: -4.6531396, y: -0.99085}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -944,7 +944,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.255486, y: 0.61013794}
+  m_Size: {x: 9.4175825, y: 2.998105}
   m_EdgeRadius: 0
 --- !u!1 &1873662328
 GameObject:
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 2118850063}
   - component: {fileID: 2118850065}
   - component: {fileID: 2118850064}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ranged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1055,7 +1055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118850062}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.45, y: 0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1004755424}
@@ -1086,7 +1086,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.9978344, y: 0}
+  m_Offset: {x: 2.2967718, y: 1.0301805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1097,5 +1097,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.833734, y: 1}
+  m_Size: {x: 3.737105, y: 3.060361}
   m_EdgeRadius: 0
