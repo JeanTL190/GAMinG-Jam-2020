@@ -6,14 +6,22 @@ public class CanShootTower : MonoBehaviour
 {
     private Queue<Collider2D> fila;
 
+    private void Awake()
+    {
+        fila = new Queue<Collider2D>();
+    }
     private void Update()
     {
-        Life vidaInimigo = fila.Peek().GetComponent<Life>();
-        if (vidaInimigo != null)
+        Life vidaIni;
+        if (fila.Count > 0)
         {
-            if (vidaInimigo.GetLife() <= 0)
+            vidaIni = fila.Peek().GetComponent<Life>();
+            if (vidaIni != null)
             {
-                fila.Dequeue();
+                if (vidaIni.GetLife() <= 0)
+                {
+                    fila.Dequeue();
+                }
             }
         }
     }

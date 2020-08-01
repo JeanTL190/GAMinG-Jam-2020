@@ -17,13 +17,24 @@ public class DisparoTower : MonoBehaviour
     {
         if(col!=null)
         {
+            Debug.Log("Cheguei2");
             tEnemy = col.GetComponent<Transform>();
             direcao = tEnemy.position - transform.position;
             rb.velocity = direcao.normalized * speed;
         }
+
     }
-    public void setCol(Collider2D c)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        col = c;
+        CanShootTower can = collision.GetComponent<CanShootTower>();
+
+        if(can!=null)
+        {
+
+            if(can.GetQueue()!=null)
+            {
+                col = can.GetQueue().Peek();
+            }
+        }
     }
 }

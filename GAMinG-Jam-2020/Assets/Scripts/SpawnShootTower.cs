@@ -25,9 +25,6 @@ public class SpawnShootTower : MonoBehaviour
     {
         if(audio!=null)
             audio.Play();
-        DisparoTower disp = shoot.GetComponent<DisparoTower>();
-        if (disp != null && canShootTower.CanShoot())
-            disp.setCol(canShootTower.GetQueue().Peek());
         Instantiate(shoot, tSpawn.position, transform.rotation);
     }
 }
