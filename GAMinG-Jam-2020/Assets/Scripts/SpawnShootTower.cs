@@ -2,40 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnShoot : MonoBehaviour
+public class SpawnShootTower : MonoBehaviour
 {
     [SerializeField] private GameObject shoot;
     [SerializeField] private string nameSpawn;
     private Transform tSpawn;
-    private CanShoot canShoot;
-    private InimigoAndar iA;
+    private CanShootTower canShootTower;
     private AudioSource audio;
-    private bool aux;
-
-    private void Awake()
+    // Start is called before the first frame update
+    void Start()
     {
-        iA = GetComponent<InimigoAndar>();
-        canShoot = GetComponentInChildren<CanShoot>();
+        canShootTower = GetComponentInChildren<CanShootTower>();
         audio = GetComponent<AudioSource>();
         tSpawn = transform.Find(nameSpawn);
     }
     private void Update()
     {
-        aux = canShoot.GetCanShoot();
-        if (!aux)
-        {
-            iA.Walk(iA.GetSpeed());
-        }
-        if (aux)
-        {
-            iA.Walk(0);
-        }
+        if (canShootTower.CanShoot())
+            Spawn();
     }
     public void Spawn()
     {
         if(audio!=null)
             audio.Play();
+        DisparoTower disp = shoot.GetComponent<DisparoTower>();
+        if (disp != null && canShootTower.CanShoot())
+            disp.setCol(canShootTower.GetQueue().Peek());
         Instantiate(shoot, tSpawn.position, transform.rotation);
     }
-
 }
