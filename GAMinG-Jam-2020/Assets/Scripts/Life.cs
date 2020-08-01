@@ -23,6 +23,7 @@ public class Life : MonoBehaviour
         if (!monster)
         {
             quantSprites = sprites.Length-1;
+            if(quantSprites>0)
             minimaVida = vidaMax / quantSprites;
         }
     }
@@ -49,7 +50,8 @@ public class Life : MonoBehaviour
             }
             else
             {
-                spriteRend.sprite = sprites[quantSprites];
+                if(spriteRend!=null)
+                    spriteRend.sprite = sprites[quantSprites];
             }
         }
     }

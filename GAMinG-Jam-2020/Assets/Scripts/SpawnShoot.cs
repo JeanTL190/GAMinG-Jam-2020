@@ -29,6 +29,7 @@ public class SpawnShoot : MonoBehaviour
         if (aux)
         {
             iA.Walk(0);
+            Spawn();
         }
     }
     public void Spawn()

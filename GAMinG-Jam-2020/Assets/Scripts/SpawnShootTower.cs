@@ -9,9 +9,11 @@ public class SpawnShootTower : MonoBehaviour
     private Transform tSpawn;
     private CanShootTower canShootTower;
     private AudioSource audio;
+    private Life vida;
     // Start is called before the first frame update
     void Start()
     {
+        vida = GetComponent<Life>();
         canShootTower = GetComponentInChildren<CanShootTower>();
         audio = GetComponent<AudioSource>();
         tSpawn = transform.Find(nameSpawn);
@@ -25,6 +27,7 @@ public class SpawnShootTower : MonoBehaviour
     {
         if(audio!=null)
             audio.Play();
-        Instantiate(shoot, tSpawn.position, transform.rotation);
+        if(vida.GetLife()>0)
+            Instantiate(shoot, tSpawn.position, transform.rotation);
     }
 }

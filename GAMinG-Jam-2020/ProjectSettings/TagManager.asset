@@ -15,12 +15,12 @@ TagManager:
   - 
   - Enemy
   - Player
-  - Range
-  - Disparo
+  - RangeTower
+  - DisparoTower
   - Tower
-  - 
-  - 
-  - 
+  - DisparoEnemy
+  - RangeEnemy
+  - Moeda
   - 
   - 
   - 
