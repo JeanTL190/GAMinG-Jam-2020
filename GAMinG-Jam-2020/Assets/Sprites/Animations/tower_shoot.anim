@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle_Enemy
+  m_Name: tower_shoot
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,13 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 7809267326112836325, guid: 43d1233e7d6043a428af43822e840827, type: 3}
+      value: {fileID: -6353849209146011997, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
+    - time: 0.13333334
+      value: {fileID: 520413391896264546, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
+    - time: 0.43333334
+      value: {fileID: -849119040590659659, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
+    - time: 0.7
+      value: {fileID: -849119040590659659, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -40,13 +46,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 7809267326112836325, guid: 43d1233e7d6043a428af43822e840827, type: 3}
+    - {fileID: -6353849209146011997, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
+    - {fileID: 520413391896264546, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
+    - {fileID: -849119040590659659, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
+    - {fileID: -849119040590659659, guid: 11abbb284aa87f74eb125d4b2473a1ba, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.71666664
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
